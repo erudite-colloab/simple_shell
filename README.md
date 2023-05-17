@@ -4,7 +4,7 @@ Group project
 Syscall
 
 Authors: 1. Eugene Baah-Asamoah
-	 2. Ayomah  Mubarak
+	 2. Ayomah Musah  Mubarak
 
 0. Betty would be proud
 mandatory

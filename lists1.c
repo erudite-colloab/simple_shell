@@ -92,7 +92,7 @@ line_list *add_line_node_end(line_list **head, char *line)
 /**
  * free_line_list - frees a line_list
  * @head: head of the linked list.
- * Return: nothing.
+ * Return: no return.
  */
 void free_line_list(line_list **head)
 {
@@ -107,7 +107,6 @@ void free_line_list(line_list **head)
 			curr = curr->next;
 			free(temp);
 		}
-
 		*head = NULL;
 	}
 }

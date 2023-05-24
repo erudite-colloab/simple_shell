@@ -236,13 +236,4 @@ void help_cd(void);
 /* get_help.c */
 int get_help(data_shell *datash);
 
-/* builtin1.c */
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
-
-/* builtin1.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
-
 #endif

@@ -32,7 +32,7 @@ void check_env(r_var **h, char *in, data_shell *data)
 		}
 	}
 
-	for (j = 0; in[x]; x++)
+	for (x = 0; in[x]; x++)
 	{
 		if (in[x] == ' ' || in[x] == '\t' || in[x] == ';' || in[x] == '\n')
 			break;

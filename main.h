@@ -16,6 +16,12 @@
 #define TOK_BUFSIZE 128
 #define TOK_DELIM " \t\r\n\a"
 
+/* 1 if using system getline() */
+#define USE_GETLINE 0
+#define USE_STRTOK 0
+
+
+   
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
 
@@ -229,4 +235,14 @@ void help_cd(void);
 
 /* get_help.c */
 int get_help(data_shell *datash);
+
+/* builtin1.c */
+int _myexit(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
+
+/* builtin1.c */
+int _myhistory(info_t *);
+int _myalias(info_t *);
+
 #endif

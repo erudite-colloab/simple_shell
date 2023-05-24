@@ -7,7 +7,7 @@
  * Return: on success 1
 */
 
-iint exec_line(data_shell *datash)
+int exec_line(data_shell *datash)
 {
 	int (*builtin)(data_shell *datash);
 

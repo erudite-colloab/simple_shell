@@ -98,6 +98,23 @@ typedef struct builtin_s
 	int (*f)(data_shell *datash);
 } builtin_t;
 
+/* _atoi.c */
+int interactive(info_t *);
+int is_delim(char, char *);
+int _isalpha(int);
+int _atoi(char *);
+
+
+/* builtin1.c */
+int _myexit(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
+
+/* builtin2.c */
+int _myhistory(info_t *);
+int _myalias(info_t *);
+
+
 /* lists1.c */
 list_t *add_node(list_t **, const char *, int);
 list_t *add_node_end(list_t **, const char *, int);
@@ -240,14 +257,5 @@ void help_cd(void);
 
 /* get_help.c */
 int get_help(data_shell *datash);
-
-/* builtin1.c */
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
-
-/* builtin1.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
 
 #endif

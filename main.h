@@ -114,6 +114,13 @@ int _myhelp(info_t *);
 int _myhistory(info_t *);
 int _myalias(info_t *);
 
+/*  exits.c */
+char *_strncpy(char *, char *, int);
+char *_strncat(char *, char *, int);
+char *_strchr(char *, char);
+
+
+
 
 /* lists1.c */
 list_t *add_node(list_t **, const char *, int);

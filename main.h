@@ -98,6 +98,23 @@ typedef struct builtin_s
 	int (*f)(data_shell *datash);
 } builtin_t;
 
+/* _atoi.c */
+int interactive(info_t *);
+int is_delim(char, char *);
+int _isalpha(int);
+int _atoi(char *);
+
+
+/* builtin1.c */
+int _myexit(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
+
+/* builtin2.c */
+int _myhistory(info_t *);
+int _myalias(info_t *);
+
+
 /* lists1.c */
 sep_list *add_sep_node_end(sep_list **head, char sep);
 void free_sep_list(sep_list **head);

@@ -161,7 +161,7 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* _atoi.c */
-int interactive(info_t *);
+int interactive(ino_t *);
 int is_delim(char, char *);
 int _isalpha(int);
 int _atoi(char *);
@@ -174,13 +174,13 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* builtin1.c */
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
+int _myexit(ino_t *);
+int _mycd(ino_t *);
+int _myhelp(ino_t *);
 
 /* builtin2.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
+int _myhistory(ino_t *);
+int _myalias(ino_t *);
 
 /* get_line.c */
 ssize_t get_input(info_t *);
